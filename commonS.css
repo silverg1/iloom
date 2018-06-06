@@ -1,0 +1,290 @@
+/* mainImg */
+
+.mainImg {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+.mainImg img {
+  padding-top: 85px;
+  width: 130%;
+  margin-left: -15%;
+}
+@media screen and (max-width: 850px) {
+  .mainImg img {
+    width: 180%;
+    margin-left: -40%;
+    padding-top: 60px;
+  }
+}
+
+
+
+/* goodProduct */
+
+.goodProduct {
+  width: 100%;
+  overflow: hidden;
+  margin: 80px 0 50px;
+  text-align: center;
+}
+.goodProduct dl {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.goodProduct dd {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.goodProduct dt {
+  line-height: 25px;
+}
+.goodProduct img {
+  width: 90%;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #E0E0E0;
+  height: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .goodProduct dd {
+    width: 150%;
+    margin-left: -18%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .goodProduct dd {
+    width: 200%;
+    margin-left: -48%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .goodProduct dd {
+    width: 250%;
+    margin-left: -75%;
+  }
+}
+
+
+
+
+/* category */
+
+.category {
+  padding: 0 40px 80px;
+}
+.subject {
+  font-size: 33px;
+  letter-spacing: -4px;
+  padding: 75px 0 35px;
+  text-align: center;
+}
+.sortProduct, .sortSeries {
+  border: 1px solid #aaaaaa;;
+  margin: 10px;
+}
+.sortProduct {
+  height: 58px;
+}
+.itemSubject, .seriesSubject {
+  font-weight: bold;
+  padding: 20px 0;
+  width: 120px;
+  text-align: center;
+  float: left;
+}
+.itemList li, .seriesList li {
+  float: left;
+  margin-right: 35px;
+  padding: 20px 0;
+}
+.sortSeries {
+  height: 115px;
+}
+.seriesSubject {
+  padding: 50px 0;
+}
+.betweenLine {
+  border-bottom: 1px solid #aaaaaa;
+  width: 85%;
+  position: relative;
+  top: 58px;
+  left: 120px;
+}
+.betweenLine.two {
+  display: none;
+}
+.betweenLine.three {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .betweenLine {
+    width: 80%;
+  }
+  .category {
+    padding: 0 0 80px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .sortSeries {
+    height: 175px;
+  }
+  .betweenLine.two {
+    display: block;
+    top: 115px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .sortSeries {
+    height: 232px;
+  }
+  .betweenLine.three {
+    display: block;
+    top: 175px;
+  }
+  .itemList li, .seriesList li {
+    margin-right: 30px;
+  }
+  .betweenLine {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .seriesSubject {
+    padding-bottom: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .itemSubject, .seriesSubject {
+    width: 90px;
+  }
+  .itemList li, .seriesList li {
+    margin-right: 18px;
+  }
+  .betweenLine {
+    left: 90px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .itemSubject, .seriesSubject {
+    width: 60px;
+  }
+  .itemList li, .seriesList li {
+    margin-right: 8px;
+  }
+  .betweenLine {
+    left: 60px;
+  }
+}
+
+
+
+
+/* choice / best */
+
+.choice {
+  margin-bottom: 70px;
+}
+.choiceList {
+  margin: 0 20px;
+  text-align: center;
+}
+.choiceList li {
+  display: inline-block;
+  width: 23.5%;
+  margin-top: 35px;
+}
+.choiceList li+li {
+  margin-left: 13px;
+}
+.choiceList img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.choiceList p {
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: -1.5px;
+  line-height: 20px;
+  display: table;
+}
+.choiceList span:first-child {
+  font-weight: bold;
+}
+.choiceList span:nth-child(2) {
+  margin-left: 5px;
+}
+.choiceList span:nth-child(4) {
+  color: #C90000;
+}
+
+
+
+/* allProduct */
+
+.allProduct {
+  border-top: 1.5px solid #666666;
+  margin: 55px 20px 0;
+}
+.array {
+  padding: 35px 0;
+}
+.array ul {
+  float: right;
+}
+.array li {
+  float: left;
+  margin-left: 10px;
+  font-size: 13px;
+  letter-spacing: -1.5px;
+}
+.array li:first-child {
+  color: #C90000;
+}
+.productList {
+  text-align: center;
+}
+.allProduct .choiceList {
+  margin: 0 0;
+  display: inline;
+}
+.listCnt {
+  width: 100%;
+  margin: 80px 0 120px;
+  text-align: center;
+}
+.listCnt li {
+  display: inline-block;
+  width: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+.listCnt li:first-child {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 30px;
+}
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .allProduct .choiceList {
+    margin-left: 13px;
+  }
+  .choiceList li {
+    width: 30%;
+  }
+  .choiceList.three li:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .choiceList {
+    margin: 0;
+  }
+  .choiceList li {
+    width: 47%;
+  }
+  .choiceList li+li {
+    margin-left: 0;
+  }
+}
