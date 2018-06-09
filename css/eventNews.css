@@ -1,0 +1,182 @@
+/* EVENT / NEWS */
+
+.eventNews {
+  padding-top: 130px;
+}
+#evns {
+  margin-left: 80px;
+}
+.chs {
+  border-bottom: 1px solid #C90000;
+}
+.chs a {
+  color: #C90000;
+}
+#evns span+span {
+  margin-left: 20px;
+}
+.evnsTitle {
+  text-align: center;
+  font-size: 35px;
+}
+.evBtn {
+  text-align: center;
+  margin-top: 40px;
+}
+.evBtn button {
+  border: 1px solid;
+  width: 220px;
+  height: 50px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+}
+.evBtn button:hover {
+  background-color: #C90000;
+  color: white;
+}
+.choose {
+  color: #C90000;
+  border: 1px solid #C90000;
+}
+.evBtn button+button {
+  margin-left: 15px;
+}
+.evList {
+  text-align: center;
+  margin-top: 70px;
+}
+.evList li {
+  display: inline-block;
+  width: 373px;
+  height: 630px;
+  vertical-align: middle;
+}
+.evList p {
+  text-align: left;
+}
+.evListTitle {
+  margin-top: 30px;
+  font-size: 16px;
+  letter-spacing: -1.5px;
+  color: black;
+}
+.evListTitleSub {
+  font-size: 13px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  color: gray;
+  padding-bottom: 80px;
+  line-height: 20px;
+}
+.evList li+li {
+  margin-left: 15px;
+}
+.evList li:hover .evListTitle {
+  font-weight: 600;
+}
+.evList li:hover .evListTitleSub {
+  color: black;
+}
+.evList.hide {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}
+.nsList li {
+  width: 370px;
+  height: 450px;
+}
+
+#liBtn {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+#liBtn:hover {
+  background-color: gray;
+}
+.evTitle {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+  letter-spacing: -2px;
+}
+.term {
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+}
+.evImg {
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+
+/* store */
+
+.storeList {
+  margin-top: 100px;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+.storeInfo {
+  height: 300px;
+}
+.storeInfo div {
+  display: inline-block;
+}
+.info1 img {
+  width: 470px;
+  height: 270px;
+}
+.info2,.info3 {
+  text-align: left;
+  height: 270px;
+  vertical-align: top;
+}
+.info2 {
+  margin-left: 50px;
+  position: relative;
+}
+.info3 {
+  margin-left: 100px;
+  padding-right: 80px;
+}
+.branch {
+  font-size: 18px;
+  margin-top: 20px;
+}
+.adr {
+  margin-top: 20px;
+  line-height: 20px;
+}
+.call {
+  margin-top: 15px;
+}
+.branchInfo {
+  font-size: 13px;
+  margin-top: 25px;
+  line-height: 25px;
+}
+.floor {
+  margin-top: 20px;
+}
+.floor span {
+  font-weight: bold;
+  color: #63666a;
+  margin-right: 20px;
+}
+.fr {
+  margin-top: 20px;
+}
+.comeBtn {
+  position: absolute;
+  bottom: 0;
+  width: 110px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #aaa;
+}

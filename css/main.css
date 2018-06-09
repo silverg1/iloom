@@ -54,8 +54,13 @@
   left: 80px;
   font-weight: 600;
 }
-
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1900px) {
+  .fadeBanner img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1400px) and (max-width: 1900px) {
   .fadeBanner img {
     margin-left: -16%;
   }
@@ -140,7 +145,6 @@
   transform: scale(1);
 }
 .cardList li:hover img {
-  cursor: pointer;
   transform: scale(1.03);
 }
 @media screen and (max-width: 850px) {
@@ -194,7 +198,6 @@
   width: 300px;
 }
 .instaCard img:hover {
-  cursor: pointer;
   transition: 1s;
   filter: opacity(0.7);
 }
@@ -236,6 +239,9 @@
 .quickList {
   margin-top: 10px;
   text-align: center;
+}
+.quickList li {
+  cursor: pointer;
 }
 .quickTitle {
   padding: 60px 0 30px;
