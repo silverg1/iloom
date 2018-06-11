@@ -117,13 +117,18 @@
 
 /* store */
 
+.store {
+  margin-bottom: 100px;
+}
 .storeList {
-  margin-top: 100px;
   text-align: center;
   letter-spacing: -1.5px;
+  margin-top: 50px;
 }
 .storeInfo {
   height: 300px;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 50px;
 }
 .storeInfo div {
   display: inline-block;
@@ -138,12 +143,13 @@
   vertical-align: top;
 }
 .info2 {
+  width: 300px;
   margin-left: 50px;
   position: relative;
 }
 .info3 {
-  margin-left: 100px;
-  padding-right: 80px;
+  width: 250px;
+  padding-left: 30px;
 }
 .branch {
   font-size: 18px;
@@ -163,6 +169,7 @@
 }
 .floor {
   margin-top: 20px;
+  line-height: 30px;
 }
 .floor span {
   font-weight: bold;
@@ -178,5 +185,302 @@
   width: 110px;
   height: 30px;
   background-color: white;
+  border: 1px solid #63666a;;
+  cursor: pointer;
+}
+.comeBtn:hover {
+  background-color: #63666a;
+  color: white;
+}
+.come {
+  background-color: #f0f0f0;
+  margin: 0 50px;
+  padding-top: 50px;
+  display: none;
+  height: 200px;
+}
+.transport {
+  display: inline-block;
+  width: 500px;
+  text-align: left;
+  vertical-align: top;
+  height: 200px;
+}
+.transport+.transport {
+  margin-left: 30px;
+}
+.transport p {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.transport ul {
+  line-height: 25px;
+}
+.moreBtn {
+  text-align: center;
+  margin: 60px 0 100px;
+}
+.moreBtn button {
+  width: 230px;
+  height: 50px;
+  font-size: 16px;
+  background-color: white;
+  color: #C90000;
+  border: 1px solid #C90000;
+  cursor: pointer;
+}
+.moreBtn button:hover {
+  color: white;
+  background-color: #C90000;
+}
+.more {
+  display: none;
+}
+
+
+
+/* login */
+
+#login {
+  padding: 200px 0 150px;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+.logBox {
+  margin: 0 auto;
   border: 1px solid #aaa;
+  width: 500px;
+  height: 450px;
+  position: relative;
+}
+.logHead {
+  margin-bottom: 30px;
+}
+.logHead h3 {
+  font-size: 30px;
+  padding-top: 40px;
+}
+.logHead ul {
+  text-align: left;
+  color: #aaa;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.logHead li {
+  display: inline-block;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.memchk {
+  color: #C90000;
+  border-bottom: 1px solid;
+}
+.logHead li+li {
+  margin-left: 20px;
+}
+.logBody {
+  margin: 0 40px;
+}
+.logBody input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #aaa;
+  letter-spacing: -1.5px;
+  text-indent: 15px;
+}
+.logBody input+input {
+  margin-top: 10px;
+}
+.log_chk {
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+.log_chk img {
+  cursor: pointer;
+  position: absolute;
+}
+.chk {
+  top: -20px;
+}
+.log_chk p {
+  display: inline;
+  margin-left: 25px;
+  color: #aaa;
+  font-weight: bold;
+  cursor: pointer;
+}
+.log_etc {
+  float: right;
+}
+.log_etc span+span {
+  border-left: 1px solid #aaa;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+.redBtn {
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  background-color: #C90000;
+  border: 1px solid #C90000;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  left: 21%;
+}
+.redBtn:hover {
+  background-color: #A50000;
+  border: 1px solid #A50000;
+}
+
+
+
+/* join */
+
+.joinBox {
+  height: 850px;
+}
+.joinHead {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #aaa;
+}
+.joinHead ul {
+  text-align: center;
+  padding-left: 0;
+}
+.joinHead li {
+  cursor: default;
+}
+.join1 {
+  padding-top: 80px;
+}
+.join1 p:first-child {
+  font-size: 30px;
+}
+.join1 p:nth-child(2) {
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.joinBtn {
+  bottom: 100px;
+}
+.agree {
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.agree p {
+  font-size: 16px;
+  color: #C90000;
+}
+.join2 {
+  text-align: left;
+}
+.agrBold {
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.agrItem {
+  height: 30px;
+}
+.agrItem p {
+  display: inline;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.agrItem img, .agrItem p {
+  cursor: pointer;
+}
+.agrItem button {
+  float: right;
+  background-color: white;
+  border: 1px solid #aaa;
+  font-size: 12px;
+  width: 90px;
+  height: 26px;
+  cursor: pointer;
+}
+.agrItem button:hover {
+  background-color: #63666A;
+  border: 1px solid #63666A;
+  color: white;
+}
+.agr+.agr {
+  margin-top: 40px;
+}
+.join2>p {
+  font-size: 12px;
+  color: #050099;
+  margin-top: 10px;
+}
+.joiningBtn {
+  width: 200px;
+  height: 50px;
+  background-color: #63666A;
+  border: 1px solid #63666A;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 45px;
+}
+.joiningBtn:hover {
+  background-color: #4C4C4C;
+  border: 1px solid #4C4C4C;
+}
+.red {
+  background-color: #C90000;
+  border: 1px solid #C90000;
+  left: 255px;
+}
+.red:hover {
+  background-color: #A50000;
+  border: 1px solid #A50000;
+}
+.join3 dt {
+  float: left;
+  margin-bottom: 10px;
+}
+.join3 input {
+  font-size: 14px;
+}
+.join3 dl+dl {
+  margin-top: 15px;
+}
+.right select, .right input {
+  width: 109px;
+  height: 35px;
+  border: 1px solid #aaa;
+  margin-left: 5px;
+}
+.right {
+  text-align: right;
+}
+.right select+select {
+  margin-left: 5px;
+}
+.radio {
+  height: 20px;
+  display: inline-flex;
+  margin-left: -150px;
+}
+.radio input {
+  height: 13px;
+  width: auto;
+}
+.radio input+input {
+  margin-top: 0;
+  margin-left: 30px;
+}
+.right input+input {
+  margin-top: 0;
 }

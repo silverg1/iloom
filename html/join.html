@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>일룸</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.iloom.com/img/front/main/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common_.css">
+    <link rel="stylesheet" href="../css/eventNews.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/commonS.js"></script>
+    <script type="text/javascript" src="../js/common_.js"></script>
+    <script type="text/javascript" src="../js/eventNews.js"></script>
+  </head>
+  <body>
+
+
+    <div id="bnd"></div>
+    <div id="gm"></div>
+    <div id="header"></div>
+    <div id="move"></div>
+    <div id="allm"></div>
+
+    <div id="login">
+      <div class="logBox joinBox">
+        <div class="logHead joinHead">
+          <h3>회원가입</h3>
+          <ul>
+            <li class="memchk">가입</li>
+            <li>약관동의</li>
+            <li>정보입력</li>
+            <li>가입완료</li>
+          </ul>
+        </div>
+        <div class="logBody">
+          <div class="join1" style="display:none;">
+            <p>회원가입을 환영합니다.</p>
+            <p>회원으로 가입하시면 다양한 혜택과<br>서비스를 이용하실 수 있습니다.</p>
+            <button class="redBtn joinBtn">가입하기</button>
+          </div>
+          <div class="join2" style="display:none;">
+            <div class="log_chk agree">
+              <img src="../img/check.png">
+              <p>전체동의</p>
+            </div>
+            <div class="agr">
+              <p class="agrBold">필수 동의항목</p>
+              <div class="agrItem">
+                <img src="../img/check_2.png">
+                <p>일룸 회원 이용 약관</p>
+                <button>약관 전체보기</button>
+              </div>
+              <div class="agrItem">
+                <img src="../img/check_2.png">
+                <p>개인정보 처리방침</p>
+                <button>내용보기</button>
+              </div>
+              <div class="agrItem">
+                <img src="../img/check_2.png">
+                <p>개인정보 수집 및 이용</p>
+                <button>내용보기</button>
+              </div>
+            </div>
+            <div class="agr">
+              <p class="agrBold">선택 동의항목</p>
+              <div class="agrItem">
+                <img src="../img/check_2.png">
+                <p>마케팅 수신동의 (이메일)</p>
+              </div>
+              <div class="agrItem">
+                <img src="../img/check_2.png">
+                <p>마케팅 수신동의 (SMS)</p>
+              </div>
+            </div>
+            <p>※ 정보수신에 동의하지 않으셔도 정상적인 서비스 이용이 가능합니다.</p>
+            <button class="joiningBtn">처음으로</button>
+            <button class="joiningBtn red">동의하고 회원가입</button>
+          </div>
+          <div class="join3">
+            <dl>
+              <dt>아이디 (이메일)</dt>
+              <dd><input type="text" placeholder="아이디 (이메일)"></dd>
+            </dl>
+            <dl>
+              <dt>비밀번호</dt>
+              <dd><input type="password" placeholder="비밀번호"></dd>
+            </dl>
+            <dl>
+              <dt>비밀번호 확인</dt>
+              <dd><input type="password" placeholder="비밀번호 확인"></dd>
+            </dl>
+            <dl>
+              <dt>이름</dt>
+              <dd><input type="text" placeholder="이름을 입력해 주세요"></dd>
+            </dl>
+            <dl style="margin-top:30px;">
+              <dt>생년월일</dt>
+              <dd  class="right">
+                <select>
+                  <option>년</option>
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>2009</option>
+                  <option>2008</option>
+                  <option>2007</option>
+                  <option>2006</option>
+                  <option>2005</option>
+                  <option>2004</option>
+                  <option>2003</option>
+                  <option>2002</option>
+                  <option>2001</option>
+                  <option>2000</option>
+                  <option>1999</option>
+                  <option>1998</option>
+                  <option>1997</option>
+                  <option>1996</option>
+                  <option>1995</option>
+                  <option>1994</option>
+                  <option>1993</option>
+                  <option>1992</option>
+                  <option>1991</option>
+                  <option>1990</option>
+                  <option>1989</option>
+                  <option>1988</option>
+                  <option>1987</option>
+                  <option>1986</option>
+                  <option>1985</option>
+                  <option>1984</option>
+                  <option>1983</option>
+                  <option>1982</option>
+                  <option>1981</option>
+                  <option>1980</option>
+                  <option>1979</option>
+                  <option>1978</option>
+                  <option>1977</option>
+                  <option>1976</option>
+                  <option>1975</option>
+                  <option>1974</option>
+                  <option>1973</option>
+                  <option>1972</option>
+                  <option>1971</option>
+                  <option>1970</option>
+                  <option>1969</option>
+                  <option>1968</option>
+                  <option>1967</option>
+                  <option>1966</option>
+                  <option>1965</option>
+                  <option>1964</option>
+                  <option>1963</option>
+                  <option>1962</option>
+                  <option>1961</option>
+                  <option>1960</option>
+                  <option>1959</option>
+                  <option>1958</option>
+                  <option>1957</option>
+                  <option>1956</option>
+                  <option>1955</option>
+                  <option>1954</option>
+                  <option>1953</option>
+                  <option>1952</option>
+                  <option>1951</option>
+                  <option>1950</option>
+                </select>
+                <select>
+                  <option>월</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <select>
+                  <option>일</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </dd>
+            </dl>
+            <dl style="margin-top:30px;">
+              <dt>성별</dt>
+              <dd class="radio">
+                <input type="radio">남자
+                <input type="radio">여자
+              </dd>
+            </dl>
+            <dl style="margin-top:30px;">
+              <dt>연락처</dt>
+              <dd  class="right">
+                <select>
+                  <option>010</option>
+                  <option>011</option>
+                  <option>016</option>
+                  <option>017</option>
+                  <option>018</option>
+                  <option>019</option>
+                </select>
+                <input type="text">
+                <input type="text">
+              </dd>
+            </dl>
+            <button class="joiningBtn">처음으로</button>
+            <button class="joiningBtn red">동의하고 회원가입</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+
+  </body>
+</html>
