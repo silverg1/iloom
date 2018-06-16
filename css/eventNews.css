@@ -282,7 +282,7 @@
 .logBody {
   margin: 0 40px;
 }
-.logBody input {
+.logBody input[type="text"], .logBody input[type="password"] {
   width: 100%;
   height: 40px;
   border: 1px solid #aaa;
@@ -345,7 +345,7 @@
 /* join */
 
 .joinBox {
-  height: 850px;
+  height: 600px;
 }
 .joinHead {
   padding-bottom: 15px;
@@ -358,13 +358,13 @@
 .joinHead li {
   cursor: default;
 }
-.join1 {
+.join1, .join4 {
   padding-top: 80px;
 }
-.join1 p:first-child {
+.join1 p:first-child, .join4 p:first-child {
   font-size: 30px;
 }
-.join1 p:nth-child(2) {
+.join1 p:nth-child(2), .join4 p:nth-child(2) {
   margin-top: 50px;
   font-size: 20px;
   line-height: 30px;
@@ -376,9 +376,13 @@
   margin-bottom: 30px;
   margin-top: 50px;
 }
-.agree p {
+.agree label {
   font-size: 16px;
   color: #C90000;
+  font-weight: bold;
+}
+.agree input, .agree label {
+  cursor: pointer;
 }
 .join2 {
   text-align: left;
@@ -391,13 +395,8 @@
 .agrItem {
   height: 30px;
 }
-.agrItem p {
-  display: inline;
+.agrItem label {
   font-size: 14px;
-  margin-left: 10px;
-}
-.agrItem img, .agrItem p {
-  cursor: pointer;
 }
 .agrItem button {
   float: right;
@@ -446,18 +445,23 @@
   background-color: #A50000;
   border: 1px solid #A50000;
 }
-.join3 dt {
+.join3 label {
   float: left;
   margin-bottom: 10px;
 }
 .join3 input {
   font-size: 14px;
+  margin-bottom: 10px;
 }
-.join3 dl+dl {
-  margin-top: 15px;
+.join3 dl {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.join3 dt {
+  float: left;
 }
 .right select, .right input {
-  width: 109px;
+  width: 105px;
   height: 35px;
   border: 1px solid #aaa;
   margin-left: 5px;
@@ -465,8 +469,9 @@
 .right {
   text-align: right;
 }
-.right select+select {
-  margin-left: 5px;
+#phone {
+  width: 105px;
+  height: 32px;
 }
 .radio {
   height: 20px;
@@ -483,4 +488,22 @@
 }
 .right input+input {
   margin-top: 0;
+}
+
+
+
+/* find */
+
+#phn {
+  margin-top: 10px;
+}
+#phn select {
+  width: 131px;
+  height: 44px;
+  text-indent: 15px;
+  border: 1px solid #aaa;
+}
+#phn input {
+  width: 129px;
+  height: 40px;
 }
