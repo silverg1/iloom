@@ -1,0 +1,11 @@
+section {
+  text-align: center;
+  padding-top: 150px;
+}
+section p {
+  font-size: 35px;
+  letter-spacing: -3px;
+}
+section img {
+  width: 100%;
+}

@@ -6,12 +6,12 @@
     <title>일룸</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://www.iloom.com/img/front/main/favicon.ico">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/common_.css">
-    <link rel="stylesheet" href="../css/eventNews.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/eventNews_.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../js/commonS.js"></script>
-    <script type="text/javascript" src="../js/common_.js"></script>
-    <script type="text/javascript" src="../js/eventNews_.js"></script>
+    <script type="text/javascript" src="../js/commonSub.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/eventNews.js"></script>
   </head>
   <body>
 
@@ -49,17 +49,16 @@
               <div class="agrItem">
                 <input type="checkbox" id="agree">
                 <label for="agree">일룸 회원 이용 약관</label>
-                <button>약관 전체보기</button>
+                <button><a href="termsOfUse.html" target="_blank">약관 전체보기</a></button>
               </div>
               <div class="agrItem">
                 <input type="checkbox" id="agree">
                 <label for="agree">개인정보 처리방침</label>
-                <button>내용보기</button>
+                <button><a href="privacy.html" target="_blank">내용보기</a></button>
               </div>
               <div class="agrItem">
                 <input type="checkbox" id="agree">
                 <label for="agree">개인정보 수집 및 이용</label>
-                <button>내용보기</button>
               </div>
             </div>
             <div class="agr">
@@ -74,8 +73,10 @@
               </div>
             </div>
             <p>※ 정보수신에 동의하지 않으셔도 정상적인 서비스 이용이 가능합니다.</p>
-            <button class="joiningBtn">처음으로</button>
-            <button class="joiningBtn red">동의하고 회원가입</button>
+            <div class="jBtn">
+              <button class="joiningBtn">처음으로</button>
+              <button class="joiningBtn red">동의하고 회원가입</button>
+            </div>
           </div>
           <div class="join3" style="display:none;">
             <label for="id">아이디 (이메일)</label>
@@ -238,8 +239,10 @@
                 <input type="text" id="phone">
               </dd>
             </dl>
-            <button class="joiningBtn">처음으로</button>
-            <button class="joiningBtn red red2">동의하고 회원가입</button>
+            <div class="jBtn">
+              <button class="joiningBtn">처음으로</button>
+              <button class="joiningBtn red red2">동의하고 회원가입</button>
+            </div>
           </div>
           <div class="join4" style="display:none;">
             <p>가입 완료</p>

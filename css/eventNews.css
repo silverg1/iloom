@@ -2,6 +2,7 @@
 
 .eventNews {
   padding-top: 130px;
+  margin-bottom: 100px;
 }
 #evns {
   margin-left: 80px;
@@ -49,9 +50,15 @@
 }
 .evList li {
   display: inline-block;
-  width: 373px;
-  height: 630px;
+  width: 29%;
+  height: 600px;
   vertical-align: middle;
+}
+.evList .noneHidden {
+  display: none;
+}
+.evList img {
+  width: 100%;
 }
 .evList p {
   text-align: left;
@@ -102,6 +109,7 @@
   margin-top: 60px;
   font-size: 30px;
   letter-spacing: -2px;
+  line-height: 40px;
 }
 .term {
   text-align: center;
@@ -111,7 +119,83 @@
 .evImg {
   margin-top: 60px;
   text-align: center;
+  width: 100%;
 }
+.evImg img {
+  width: 85%;
+}
+
+@media screen and (max-width: 1024px) {
+  .evList li {
+    height: 500px;
+  }
+  .nsList li {
+    width: 45%;
+  }
+  .nsList li:nth-child(3), .nsList li:nth-child(5) {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .evList li {
+    width: 44%;
+    height: 600px;
+  }
+  .evList .noneHidden {
+    visibility: hidden;
+    display: inline-block;
+  }
+  .evList li:nth-child(3) {
+    margin-left: 0;
+  }
+  .evList .hidden {
+    display: none;
+  }
+  .evBtn button {
+    width: 28%;
+  }
+  #evns {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+  .nsList li {
+    height: 450px;
+  }
+  .nsList .hidden {
+    display: inline-block;
+  }
+  .eventNews {
+    margin-bottom: 0;
+  }
+  .evImg img {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .evTitle span {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .evList li {
+    width: 94%;
+    height: auto;
+  }
+  .evList li+li {
+    margin-left: 0;
+  }
+  .evList .noneHidden {
+    display: none;
+  }
+  .evListTitleSub {
+    padding-bottom: 50px;
+  }
+  .nsList .hidden {
+    display: none;
+  }
+}
+
 
 
 
@@ -130,11 +214,14 @@
   border-bottom: 1px solid #f0f0f0;
   margin: 0 50px;
 }
-.storeInfo div {
+.info1, .info2, .info3 {
   display: inline-block;
 }
+.info1 {
+  width: 40%;
+}
 .info1 img {
-  width: 470px;
+  width: 100%;
   height: 270px;
 }
 .info2,.info3 {
@@ -143,12 +230,12 @@
   vertical-align: top;
 }
 .info2 {
-  width: 300px;
-  margin-left: 50px;
+  width: 25%;
+  margin-left: 20px;
   position: relative;
 }
 .info3 {
-  width: 250px;
+  width: 22%;
   padding-left: 30px;
 }
 .branch {
@@ -201,7 +288,7 @@
 }
 .transport {
   display: inline-block;
-  width: 500px;
+  width: 42%;
   text-align: left;
   vertical-align: top;
   height: 200px;
@@ -236,6 +323,33 @@
 }
 .more {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .come {
+    height: 250px;
+  }
+  .comeBtn {
+    bottom: -20px;
+  }
+  .storeInfo, .come {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info1 {
+    width: 53%;
+    margin-top: 20px;
+  }
+  .info1 img {
+    height: 250px;
+  }
+  .info2 {
+    width: 40%;
+  }
+  .info3 {
+    display: none;
+  }
 }
 
 
@@ -296,9 +410,10 @@
   height: 20px;
   overflow: hidden;
   position: relative;
-  text-align: left;
+  float: left;
+}
+.log_chk, .log_etc {
   margin-top: 30px;
-  margin-bottom: 50px;
   font-size: 13px;
 }
 .log_chk img {
@@ -324,7 +439,7 @@
   padding-left: 10px;
 }
 .redBtn {
-  width: 300px;
+  width: 60%;
   height: 50px;
   font-size: 16px;
   color: white;
@@ -339,6 +454,19 @@
   background-color: #A50000;
   border: 1px solid #A50000;
 }
+
+@media screen and (max-width: 500px) {
+  .logBox {
+    width: 100%;
+  }
+  #footer {
+    display: none;
+  }
+  #login {
+    padding: 100px 0 0;
+  }
+}
+
 
 
 
@@ -410,6 +538,8 @@
 .agrItem button:hover {
   background-color: #63666A;
   border: 1px solid #63666A;
+}
+.agrItem button:hover a {
   color: white;
 }
 .agr+.agr {
@@ -420,17 +550,20 @@
   color: #050099;
   margin-top: 10px;
 }
+.jBtn {
+  position: absolute;
+  bottom: 50px;
+  width: 85%;
+  text-align: center;
+}
 .joiningBtn {
-  width: 200px;
+  width: 40%;
   height: 50px;
   background-color: #63666A;
   border: 1px solid #63666A;
   color: white;
   font-size: 15px;
   cursor: pointer;
-  position: absolute;
-  bottom: 50px;
-  left: 45px;
 }
 .joiningBtn:hover {
   background-color: #4C4C4C;
@@ -439,7 +572,6 @@
 .red {
   background-color: #C90000;
   border: 1px solid #C90000;
-  left: 255px;
 }
 .red:hover {
   background-color: #A50000;
@@ -461,7 +593,7 @@
   float: left;
 }
 .right select, .right input {
-  width: 105px;
+  width: 23%;
   height: 35px;
   border: 1px solid #aaa;
   margin-left: 5px;
@@ -470,7 +602,7 @@
   text-align: right;
 }
 #phone {
-  width: 105px;
+  width: 24%;
   height: 32px;
 }
 .radio {
@@ -498,12 +630,12 @@
   margin-top: 10px;
 }
 #phn select {
-  width: 131px;
+  width: 30%;
   height: 44px;
   text-indent: 15px;
   border: 1px solid #aaa;
 }
 #phn input {
-  width: 129px;
+  width: 30%;
   height: 40px;
 }

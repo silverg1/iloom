@@ -33,12 +33,16 @@
   text-align: center;
   letter-spacing: -1.5px;
 }
+.notice, .as, .move, .oneOnOne {
+  margin-left: 5%;
+}
 .cstHeader {
   font-size: 35px;
   margin-bottom: 20px;
 }
 .cstHeadSub {
   font-size: 17px;
+  line-height: 24px;
 }
 .cstBody {
   margin: 50px 20% 100px;
@@ -53,14 +57,18 @@
   font-size: 23px;
   height: 45px;
 }
-.cstday p {
-  font-size: 15px;
-  margin-top: 8px;
-}
-.cstday span+span {
+.cstday span:nth-child(2) {
   margin-left: 20px;
   border-left: 0.5px solid #aaa;
   padding-left: 20px;
+}
+.cstday span:nth-child(3) {
+  display: block;
+  margin-top: 30px;
+}
+.cstday p {
+  font-size: 15px;
+  margin-top: 8px;
 }
 .cstCall {
   color: #C90000;
@@ -75,6 +83,9 @@
   padding-bottom: 70px;
   color: gray;
 }
+.cstExp span:nth-child(2) {
+  display: block;
+}
 .cstBody table {
   display: inline-table;
 }
@@ -88,6 +99,8 @@
   width: 500px;
   display: inline-flex;
   padding-left: 50px;
+  line-height: 30px;
+  text-align: left;
 }
 .notice td:nth-child(3) {
   width: 110px;
@@ -178,9 +191,19 @@
 .fee div {
   border: 0.5px solid #aaa;
   display: inline-block;
-  width: 31%;
+  width: 40%;
   height: 200px;
   vertical-align: middle;
+}
+.fee div:nth-child(5) {
+  width: 45%;
+}
+.fee span {
+  margin: 0 10px;
+}
+.fee .block {
+  display: block;
+  margin: 20px 0;
 }
 .fee p:first-child {
   line-height: 100px;
@@ -204,7 +227,7 @@
 .asProcess div {
   border: 0.5px solid #aaa;
   line-height: 70px;
-  padding: 0 60px;
+  padding: 0 30px;
   font-size: 17px;
 }
 .asProcess span:first-child {
@@ -248,7 +271,7 @@
   color: white;
   font-size: 15px;
   cursor: pointer;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .asBtn.red {
   background-color: #C90000;
@@ -277,6 +300,80 @@
   line-height: 33px;
   font-size: 18px;
 }
+
+@media screen and (max-width: 900px) {
+  .customer {
+    width: 130px;
+    height: 250px;
+    top: 80px;
+    padding-top: 0;
+  }
+  .cstMenu {
+    line-height: 30px;
+  }
+  .notice td:nth-child(2) {
+    width: 350px;
+    padding-left: 30px;
+  }
+  .notice, .as, .move, .oneOnOne {
+    margin-left: 10%;
+  }
+  .asBase {
+    width: 440px;
+  }
+  .oneOnOne .cstBody {
+    padding: 100px 0 150px;
+  }
+  .cstHeadSub span {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .customer {
+    display: none;
+  }
+  .notice, .as, .move, .oneOnOne {
+    margin-left: 0;
+  }
+  .notice .cstBody, .oneOnOne .cstBody {
+    margin: 50px 5%;
+  }
+  .as .cstBody, .move .cstBody {
+    margin: 50px 10%;
+  }
+  .asBase {
+    width: 90%;
+  }
+  .cstCnt {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cstCall {
+    font-size: 60px;
+  }
+  .cstExp span:first-child {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .notice td:nth-child(2) {
+    width: 250px;
+    padding-left: 15px;
+  }
+  .asBtn {
+    width: 48%;
+  }
+  .asBtn+.asBtn {
+    margin-left: 3px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .notice td:nth-child(2) {
+    width: 200px;
+  }
+}
+
 
 
 
@@ -347,17 +444,30 @@
 .story+.story {
   margin-top: 100px;
 }
+.bsImg img {
+  width: 95%;
+}
+.bsImg .half {
+  width: 48%;
+}
 .bsImg img+img {
   margin-top: 20px;
 }
 .aboutContainer .cstBody {
-  margin: 50px 0 100px;
+  margin: 50px 0 0;
+}
+.aboutContainer>div {
+  margin: 0;
+}
+.brandHistory img {
+  width: 48%;
 }
 .brandHistory img+img {
   margin-top: 20px;
 }
 .gvHeader {
   margin-bottom: 100px;
+  width: 95%;
 }
 .groupValues .story p:first-child {
   margin-bottom: 30px;
@@ -375,4 +485,37 @@
 }
 .gv3 img:nth-child(6) {
   margin-bottom: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    height: 200px;
+  }
+  .about .cst {
+    line-height: 60px;
+  }
+  .bs1 iframe {
+    height: 350px;
+  }
+  .story p:nth-child(3) {
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bs1 iframe {
+    width: 95%;
+  }
+  .bsImg .half {
+    width: 95%;
+  }
+  .bsBtn button {
+    width: 35%;
+  }
+  .brandHistory img {
+    width: 95%;
+  }
+  .gv3 img {
+    width: 95%;
+    float: none;
+  }
 }

@@ -87,15 +87,6 @@ header {
   text-align: right;
 }
 
-@media screen and (max-width: 1180px) {
-  #gnbItem {
-    display: none;
-  }
-  #logo {
-    top: 20px;
-    left: 85%;
-  }
-}
 @media screen and (max-width: 800px) {
   .mobile {
     display: block;
@@ -133,7 +124,7 @@ header {
 
 #gnbM {
   width: 250px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;

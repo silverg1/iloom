@@ -20,7 +20,7 @@ $(function(){
     }
     $('.fadeBanner a').fadeOut(1000);
     $('.fadeBanner a').eq(num).stop().fadeIn(1000);
-    $('.cntBanner').text((num+1) + ' of 5');
+    $('.cntBanner').text((num+1) + ' of 4');
   }
 
   function prev(){
@@ -30,7 +30,7 @@ $(function(){
     }
     $('.fadeBanner a').fadeOut(1000);
     $('.fadeBanner a').eq(num).stop().fadeIn(1000);
-    $('.cntBanner').text((num+1) + ' of 5');
+    $('.cntBanner').text((num+1) + ' of 4');
   }
 
   var timer = setInterval(function(){next()},4000);

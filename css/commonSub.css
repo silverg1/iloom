@@ -14,6 +14,7 @@
   .mainImg img {
     width: 180%;
     margin-left: -40%;
+    padding-top: 60px;
   }
 }
 
@@ -21,6 +22,9 @@
 
 /* goodProduct */
 
+section {
+  letter-spacing: -1.5px;
+}
 .goodProduct {
   width: 100%;
   overflow: hidden;
@@ -38,6 +42,11 @@
 }
 .goodProduct dt {
   line-height: 25px;
+  font-size: 18px;
+}
+.goodProduct dt span {
+  font-weight: bold;
+  color: #C90000;
 }
 .goodProduct img {
   width: 90%;
@@ -76,9 +85,11 @@
 }
 .subject {
   font-size: 33px;
-  letter-spacing: -4px;
   padding: 75px 0 35px;
   text-align: center;
+}
+.smaller {
+  font-size: 26px;
 }
 .sortProduct, .sortSeries {
   border: 1px solid #aaaaaa;;
@@ -98,6 +109,7 @@
   float: left;
   margin-right: 35px;
   padding: 20px 0;
+  cursor: pointer;
 }
 .sortSeries {
   height: 115px;
@@ -194,6 +206,7 @@
   display: inline-block;
   width: 23.5%;
   margin-top: 35px;
+  cursor: pointer;
 }
 .choiceList li+li {
   margin-left: 13px;
@@ -205,7 +218,6 @@
 .choiceList p {
   text-align: left;
   font-size: 14px;
-  letter-spacing: -1.5px;
   line-height: 20px;
   display: table;
 }
@@ -237,9 +249,9 @@
   float: left;
   margin-left: 10px;
   font-size: 13px;
-  letter-spacing: -1.5px;
+  cursor: pointer;
 }
-.array li:first-child {
+.arrChoice {
   color: #C90000;
 }
 .productList {
@@ -260,8 +272,15 @@
   margin-right: 10px;
   font-size: 14px;
   padding: 6px 10px;
+  cursor: pointer;
 }
-.listCnt li:first-child {
+.listCnt .ten {
+  padding: 6px 15px 6px 6px;
+}
+.hidden {
+  visibility: hidden;
+}
+.cntChoice {
   border: 1px solid rgb(224, 224, 224);
   border-radius: 30px;
 }
@@ -285,5 +304,63 @@
   }
   .choiceList li+li {
     margin-left: 0;
+  }
+}
+
+
+
+
+/* series */
+
+.seriesHeader {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid #E0E0E0;
+}
+.seriesHeader p {
+  padding-top: 80px;
+  font-size: 35px;
+}
+.seriesCategory {
+  text-align: center;
+  margin: 30px auto 0;
+}
+.seriesCategory li {
+  display: inline-block;
+  padding: 15px;
+  letter-spacing: -1.5px;
+  cursor: pointer;
+}
+.series {
+  text-align: center;
+  margin: 0 auto 150px;
+}
+.series li {
+  display: inline-block;
+  width: 31%;
+  margin-top: 60px;
+}
+.series li+li {
+  margin-left: 10px;
+}
+.series img {
+  width: 100%;
+}
+.series p {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: -1.5px;
+}
+
+@media screen and (max-width: 500px) {
+  .seriesCategory {
+    width: 80%;
+  }
+  .series li {
+    width: 48%;
+    margin-top: 30px;
+  }
+  .series li+li {
+    margin-left: 3px;
   }
 }
