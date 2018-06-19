@@ -621,6 +621,12 @@
 .right input+input {
   margin-top: 0;
 }
+@media screen and (max-width: 500px) {
+  .jBtn {
+    margin-left: -3%;
+  }
+}
+
 
 
 
