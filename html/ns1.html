@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/eventNews.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../js/commonSub.js"></script>
-    <script type="text/javascript" src="../js/common.js"></script>
-    <script type="text/javascript" src="../js/eventNews.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/commonSub.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/eventNews.js"></script>
   </head>
   <body>
 
@@ -33,7 +33,7 @@
       <div class="evnsTitle">NEWS</div>
 
       <div class="evTitle">
-        <p>tvN드라마 <span><김비서가 왜 그럴까>와</span> <span>일룸이 함께합니다.</span></p>
+        <p>tvN드라마 <span>&lt;김비서가 왜 그럴까&gt;와</span> <span>일룸이 함께합니다.</span></p>
       </div>
 
       <div class="term">
@@ -41,11 +41,13 @@
       </div>
 
       <div class="evImg">
-        <img src="../img/ns1.jpg">
+        <img src="../img/ns1.jpg"
+        alt="일룸이 제작 지원하는 tvN 드라마 <김비서가 왜 그럴까> 포스터 /
+        주인공 이영준(박서준 분) 펜트하우스 침실의 일룸 이카리아 모션베드">
       </div>
 
       <div class="evBtn">
-        <a href="news.html"><button type="button" id="liBtn">목록으로</button></a>
+        <button type="button" id="liBtn" onclick="location.href='news.html'">목록으로</button>
       </div>
     </section>
 

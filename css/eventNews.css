@@ -601,7 +601,7 @@
 .right {
   text-align: right;
 }
-#phone {
+#phone1, #phone2 {
   width: 24%;
   height: 32px;
 }
@@ -632,16 +632,16 @@
 
 /* find */
 
-#phn {
+#phn1, #phn2 {
   margin-top: 10px;
 }
-#phn select {
+#phn1 select, #phn2 select {
   width: 30%;
   height: 44px;
   text-indent: 15px;
   border: 1px solid #aaa;
 }
-#phn input {
+#phn1 input, #phn2 input {
   width: 30%;
   height: 40px;
 }

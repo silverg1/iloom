@@ -94,18 +94,18 @@ if ($("input[value='man']").is('checked') == true) {
 $('.agree label').click(function(){
   if ($('#agree_all').prop('checked')) {
     $('#agree_all').prop('checked',false);
-    $("input[id='agree']").prop('checked',false);
+    $("input[name='agree']").prop('checked',false);
   } else {
     $('#agree_all').prop('checked',true);
-    $("input[id='agree']").prop('checked',true);
+    $("input[name='agree']").prop('checked',true);
   }
 });
 
 $('#agree_all').click(function(){
   if ($(this).prop('checked')) {
-    $("input[id='agree']").prop('checked',true);
+    $("input[name='agree']").prop('checked',true);
   } else {
-    $("input[id='agree']").prop('checked',false);
+    $("input[name='agree']").prop('checked',false);
   }
 });
 

@@ -87,7 +87,8 @@
   display: block;
   margin-top: 30px;
 }
-.cstday p {
+.cstday .p {
+  display: block;
   font-size: 15px;
   margin-top: 8px;
 }

@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main_.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../js/common.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
   </head>
   <body>
 
 
     <header>
-      <nav id="topMenu">
+      <nav class="topMenu">
         <ul>
           <li class="popup all"><a href="#"><img src="../img/icon_gnb_menu.png" alt="전체보기"></a></li>
-          <li class="mobile"><a href="#"><img src="../img/icon_gnb_menu.png"></a></li>
-          <li class="popup"><a href="#">전체</a></li>
+          <li class="mobile"><a href="#"><img src="../img/icon_gnb_menu.png" alt="메뉴보기"></a></li>
           <li>
             <a href="bedR.html">침실<div style="height:16px"></div></a>
             <ul class="innerMenu">
@@ -87,11 +86,11 @@
         </ul>
       </nav>
 
-      <div id="logo">
+      <div class="logo">
         <a href="main.html"><img src="../img/gnb_logo.png" alt="iloom"></a>
       </div>
 
-      <nav id="gnbItem">
+      <nav class="gnbItem">
         <ul>
           <li><a href="login.html">로그인</a></li>
           <li><a href="join.html">회원가입</a></li>
@@ -107,17 +106,17 @@
 
 
 
-    <div id="blind"></div>
+    <div class="blind"></div>
 
 
 
-    <nav id="gnbM">
-      <div id="navHeader">
+    <nav class="gnbM">
+      <div class="navHeader">
         <a href="main.html"><img src="../img/logo_white1.png" alt="iloom"></a>
-        <span id="close">x</span>
+        <span class="close">x</span>
       </div>
 
-      <ul id="gMenu">
+      <ul class="gMenu">
         <li>
           <p class="gMenus">침실</p>
           <div class="lMenu">
@@ -148,7 +147,7 @@
           <div class="lMenu">
             <table>
               <tr>
-                <td><a href="livingR.html">테이블</a></a></td>
+                <td><a href="livingR.html">테이블</a></td>
                 <td><a href="livingR.html">거실장</a></td>
               </tr>
               <tr>
@@ -181,9 +180,7 @@
                 <td><a href="kidsR.html">수납장</a></td>
                 <td><a href="kidsR.html">소파/의자</a></td>
               </tr>
-              <tr>
-                <td><a href="kidsR.html">액세서리</a></td>
-              </tr>
+              <tr><td><a href="kidsR.html">액세서리</a></td></tr>
             </table>
           </div>
         </li>
@@ -199,9 +196,7 @@
                 <td><a href="studyR.html">수납장</a></td>
                 <td><a href="studyR.html">의자</a></td>
               </tr>
-              <tr>
-                <td><a href="studyR.html">침대</a></td>
-              </tr>
+              <tr><td><a href="studyR.html">침대</a></td></tr>
             </table>
           </div>
         </li>
@@ -217,9 +212,7 @@
                 <td><a href="library.html">서랍장</a></td>
                 <td><a href="library.html">의자</a></td>
               </tr>
-              <tr>
-                <td><a href="library.html">수납장</a></td>
-              </tr>
+              <tr><td><a href="library.html">수납장</a></td></tr>
             </table>
           </div>
         </li>
@@ -253,12 +246,11 @@
 
 
 
-    <div id="moveHeader">
-      <nav id="topMenu">
+    <div class="moveHeader">
+      <nav class="topMenu">
         <ul>
-          <li class="popup moveHeader all"><a href="#"><img src="../img/icon_gnb_menu.png" alt="전체보기"></a></li>
-          <li class="moveHeader mobile"><a href="#"><img src="../img/icon_gnb_menu.png"></a></li>
-          <li class="popup moveHeader"><a href="#">전체</a></li>
+          <li class="popup moveH all"><a href="#"><img src="../img/icon_gnb_menu.png" alt="전체보기"></a></li>
+          <li class="moveH mobile"><a href="#"><img src="../img/icon_gnb_menu.png" alt="메뉴보기"></a></li>
           <li>
             <a href="bedR.html">침실<div style="height:16px"></div></a>
             <ul class="innerMenu">
@@ -325,11 +317,11 @@
         </ul>
       </nav>
 
-      <div id="logo">
+      <div class="logo">
         <a href="main.html"><img src="../img/gnb_logo.png" alt="iloom"></a>
       </div>
 
-      <nav id="gnbItem">
+      <nav class="gnbItem">
         <ul>
           <li><a href="login.html">로그인</a></li>
           <li><a href="join.html">회원가입</a></li>
@@ -344,7 +336,7 @@
 
 
 
-    <div id="allMenuPopup">
+    <div class="allMenuPopup">
       <span class="close">x</span>
       <div class="topLine"></div>
       <div class="allMenuLine" style="left: 12%;"></div>
@@ -571,7 +563,7 @@
 
 
     <section>
-      <section id="mainBanner">
+      <article class="mainBanner">
         <div class="fadeBanner">
           <a href="#"><img src="../img/mainBanner1.png"
             alt="ICARIA 모던 클래식 스타일로 즐기는 프리미엄 모션 침실,이카리아"></a>
@@ -591,9 +583,9 @@
         <p class="rightBtn">
           <a><img src="../img/slide_r.png" alt="다음버튼"></a>
         </p>
-      </section>
+      </article>
 
-      <section id="mainCard">
+      <article class="mainCard">
         <ul class="cardList">
           <li><a href="ev1.html"><img src="../img/mainCard1.jpg"
             alt="EVENT 일룸 공간제안 서비스로 내가 꿈꾸던 우리집을 일룸으로 채워보세요."></a></li>
@@ -602,50 +594,50 @@
           <li><a href="ns3.html"><img src="../img/mainCard3.jpg"
             alt="NEWS 일룸 리빙 디자이너 9기 공개모집"></a></li>
         </ul>
-      </section>
+      </article>
 
-      <section id="instagram">
+      <article class="instagram">
         <h1 class="title">INSTAGRAM</h1>
         <ul class="instaCard">
           <li><a href="https://www.instagram.com/p/Bi5rSd9lUu1/" target="_blank">
-            <img src="../img/instagram1.jpg">
+            <img src="../img/instagram1.jpg" alt="인스타그램1">
           </a></li>
           <li><a href="https://www.instagram.com/p/Bi0_VcagZTn/" target="_blank">
-            <img src="../img/instagram2.jpg">
+            <img src="../img/instagram2.jpg" alt="인스타그램2">
           </a></li>
           <li><a href="https://www.instagram.com/p/Bivwu5tAEIb/" target="_blank">
-            <img src="../img/instagram3.jpg">
+            <img src="../img/instagram3.jpg" alt="인스타그램3">
           </a></li>
           <li><a href="https://www.instagram.com/p/BilFx3kgE-h/" target="_blank">
-            <img src="../img/instagram4.jpg">
+            <img src="../img/instagram4.jpg" alt="인스타그램4">
           </a></li>
         </ul>
         <div class="readMore">
           <a href="https://www.instagram.com/iloom_official/" target="_blank">Read More</a>
         </div>
-      </section>
+      </article>
 
-      <section id="quickMenu">
+      <article class="quickMenu">
         <h1 class="quickTitle">QUICK MENU</h1>
         <ul class="quickList">
           <li>
-            <div><img src="../img/quick_menu_1.png"></div>
+            <div><img src="../img/quick_menu_1.png" alt="공간제안 서비스"></div>
             <p>Consulting<br>공간제안 서비스</p>
           </li>
           <li><a href="store.html">
-            <div><img src="../img/quick_menu_3.png"></div>
+            <div><img src="../img/quick_menu_3.png" alt="매장안내"></div>
             <p>Store<br>매장안내</p>
           </a></li>
           <li class="notice"><a href="notice.html">
-            <div><img src="../img/quick_menu_4.png"></div>
+            <div><img src="../img/quick_menu_4.png" alt="공지사항"></div>
             <p>Notice<br>공지사항</p>
           </a></li>
           <li>
-            <div><img src="../img/quick_menu_2.png"></div>
+            <div><img src="../img/quick_menu_2.png" alt="전시품 판매"></div>
             <p>Outlet<br>전시품 판매</p>
           </li>
         </ul>
-      </section>
+      </article>
     </section>
 
 

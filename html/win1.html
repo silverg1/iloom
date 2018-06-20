@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/eventNews.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="../js/commonSub.js"></script>
-    <script type="text/javascript" src="../js/common.js"></script>
-    <script type="text/javascript" src="../js/eventNews.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/commonSub.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/eventNews.js"></script>
   </head>
   <body>
 
@@ -24,13 +24,13 @@
 
 
 
-    <section id="eventNews">
+    <section class="eventNews">
       <div id="evns">
         <span class="chs"><a href="event.html">EVENT</a></span>
         <span><a href="news.html">NEWS</a></span>
       </div>
 
-      <div id="evnsTitle">EVENT</div>
+      <div class="evnsTitle">EVENT</div>
 
       <div class="evTitle">
         <p>포토 상품평 이벤트 당첨자 발표</p>
@@ -41,11 +41,11 @@
       </div>
 
       <div class="evImg">
-        <img src="../img/w1.jpg">
+        <img src="../img/w1.jpg" alt="포토 상품평 이벤트 4월 당첨자 발표">
       </div>
 
       <div class="evBtn">
-        <a href="event.html"><button type="button" id="liBtn">목록으로</button></a>
+        <button type="button" id="liBtn" onclick="location.href='event.html'">목록으로</button>
       </div>
     </section>
 
